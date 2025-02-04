@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dra. Ornella di Leone - Pediatria</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Roboto', sans-serif; background: #f4f4f4; color: #333; line-height: 1.6; }
+    header {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    header img {
+      max-width: 150px; /* Tamanho do logo */
+      margin-bottom: 20px;
+    }
+    header h1 { font-size: 3rem; margin-bottom: 10px; }
+    header p { font-size: 1.2rem; }
+    nav {
+      background: #fff;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #ff6f61; }
+    .container { max-width: 1100px; margin: 20px auto; padding: 0 20px; }
+    section {
+      background: #fff;
+      margin-bottom: 20px;
+      padding: 40px 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    section h2 { text-align: center; margin-bottom: 20px; }
+    #about img.doctor-photo {
+      max-width: 300px; /* Tamanho da foto da Dra. Ornella */
+      width: 100%;
+      display: block;
+      margin: 20px auto 0;
+      border-radius: 8px;
+    }
+    ul { list-style: none; }
+    ul li {
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+    }
+    ul li:last-child { border-bottom: none; }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: #fff;
+    }
+    @media (min-width: 768px) {
+      section { padding: 60px 40px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="logo.jpg" alt="Logo da Dra. Ornella di Leone" /> <!-- Logo no cabeçalho -->
+      <h1>Dra. Ornella di Leone</h1>
+      <p>Sua Parceira em Cuidados Pediátricos</p>
+    </div>
+  </header>
+  <nav>
+    <div class="container">
+      <a href="#about">Sobre Mim</a>
+      <a href="#services">Serviços</a>
+      <a href="#contact">Contato</a>
+    </div>
+  </nav>
+  <div class="container">
+    <section id="about">
+      <h2>Sobre Mim</h2>
+      <p>Olá! Eu sou a Dra. Ornella di Leone, pediatra com mais de 10 anos de experiência cuidando de crianças. Meu objetivo é garantir que cada criança tenha um começo de vida saudável e feliz, com muita compaixão e cuidado.</p>
+      <img src="ornella.png" alt="Dra. Ornella di Leone" class="doctor-photo" /> <!-- Foto da Dra. Ornella com tamanho ajustado -->
+    </section>
+    <section id="services">
+      <h2>Serviços</h2>
+      <ul>
+        <li>Consultas Pediátricas Gerais</li>
+        <li>Vacinações e Imunizações</li>
+        <li>Exames de Rotina</li>
+        <li>Acompanhamento de Nutrição e Crescimento</li>
+        <li>Atendimento de Emergência Pediátrica</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contato</h2>
+      <p>Email: <a href="mailto:draornella@example.com">draornella@example.com</a></p>
+      <p>Telefone: (123) 456-7890</p>
+      <p>Endereço: Rua Saúde, 123, Cidade Médica</p>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2025 Dra. Ornella di Leone - Pediatria. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
