@@ -8,24 +8,46 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Roboto', sans-serif; background: #f4f4f4; color: #333; line-height: 1.6; }
+
+    /* Header */
     header {
-      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-      color: #fff;
-      text-align: center;
-      padding: 60px 20px;
+      background: linear-gradient(
+        to right, 
+        rgb(250, 245, 234), /* Light beige color on the left */
+        rgb(250, 245, 234) 50%, /* Transition starts at 50% */
+        #ff9a9e /* Pink color on the right */
+      );
+      color: #333; /* Darker text color for better contrast */
+      padding: 20px; /* Padding inside the header */
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; /* Align items to the start (left) */
+      position: relative;
+      overflow: hidden;
+      height: 400px; /* Set header height to 400px */
     }
     header .container {
       display: flex;
       align-items: center;
-      justify-content: center;
-      flex-direction: column;
+      justify-content: flex-start; /* Align items to the start (left) */
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
     }
     header img {
-      max-width: 150px; /* Tamanho do logo */
-      margin-bottom: 20px;
+      width: 400px; /* Set logo width to 400px */
+      height: 400px; /* Set logo height to 400px */
+      margin-right: 20px; /* Add spacing between the logo and text */
     }
-    header h1 { font-size: 3rem; margin-bottom: 10px; }
-    header p { font-size: 1.2rem; }
+    header .text {
+      flex: 1;
+      text-align: left;
+    }
+    header h1 { font-size: 3rem; margin-bottom: 10px; } /* Larger font size for the header */
+    header p { font-size: 1.5rem; } /* Larger font size for the subtitle */
+
+    /* Nav */
     nav {
       background: #fff;
       padding: 15px;
@@ -41,6 +63,8 @@
       transition: color 0.3s;
     }
     nav a:hover { color: #ff6f61; }
+
+    /* Main Content */
     .container { max-width: 1100px; margin: 20px auto; padding: 0 20px; }
     section {
       background: #fff;
@@ -51,7 +75,7 @@
     }
     section h2 { text-align: center; margin-bottom: 20px; }
     #about img.doctor-photo {
-      max-width: 300px; /* Tamanho da foto da Dra. Ornella */
+      max-width: 300px;
       width: 100%;
       display: block;
       margin: 20px auto 0;
@@ -63,6 +87,8 @@
       border-bottom: 1px solid #eee;
     }
     ul li:last-child { border-bottom: none; }
+
+    /* Footer */
     footer {
       text-align: center;
       padding: 20px;
@@ -77,9 +103,11 @@
 <body>
   <header>
     <div class="container">
-      <img src="logo.jpg" alt="Logo da Dra. Ornella di Leone" /> <!-- Logo no cabeçalho -->
-      <h1>Dra. Ornella di Leone</h1>
-      <p>Sua Parceira em Cuidados Pediátricos</p>
+      <img src="logo.png" alt="Logo da Dra. Ornella di Leone" /> <!-- Logo à esquerda -->
+      <div class="text">
+        <h1>Dra. Ornella di Leone</h1>
+        <p>Sua Parceira em Cuidados Pediátricos</p>
+      </div>
     </div>
   </header>
   <nav>
@@ -93,7 +121,7 @@
     <section id="about">
       <h2>Sobre Mim</h2>
       <p>Olá! Eu sou a Dra. Ornella di Leone, pediatra com mais de 10 anos de experiência cuidando de crianças. Meu objetivo é garantir que cada criança tenha um começo de vida saudável e feliz, com muita compaixão e cuidado.</p>
-      <img src="ornella.png" alt="Dra. Ornella di Leone" class="doctor-photo" /> <!-- Foto da Dra. Ornella com tamanho ajustado -->
+      <img src="ornella.png" alt="Dra. Ornella di Leone" class="doctor-photo" /> <!-- Foto da Dra. Ornella -->
     </section>
     <section id="services">
       <h2>Serviços</h2>
